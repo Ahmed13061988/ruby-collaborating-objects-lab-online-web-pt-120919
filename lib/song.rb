@@ -8,7 +8,8 @@ class Song
     @name = name 
     @@songs << self 
   end 
-  def self.new_by_filename 
+  def self.new_by_filename(filename)
+    
   
   def self.songs 
     @@songs 
