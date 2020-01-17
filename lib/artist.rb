@@ -18,17 +18,19 @@ class Artist
     @@all
   end 
   
-  # def self.songs
-  #   Song.all.select do |s|
-  #     s.artist == self 
-  #   end 
+  def self.songs
+    Song.all.select do |s|
+      s.artist == self 
+    end 
   end 
   def self.find_or_create_by_name(name)
     self.all.detect {|artist| artist.name == name} || Artist.new(name)
   end 
+  
   def print_songs
     self.songs.each  {|song| puts song.name}
   end 
+  
   def self.new_by_filename(filename)
     artist_name, song_name, extra = filename.split(" - ")
     song = self.new(song_name)
