@@ -19,7 +19,7 @@ class Artist
     end 
   end 
   def self.find_or_create_by_name(name)
-    if artist.name.split(" ") == name 
+    if self.all.artist.name.split(" ") == name 
       name 
     else 
       add_song(song)
