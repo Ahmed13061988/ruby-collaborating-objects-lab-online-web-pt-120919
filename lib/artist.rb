@@ -22,5 +22,5 @@ class Artist
     self.all.detect {|artist| artist.name == name} || Artist.new(name)
   end 
   def print_song 
-    self.songs
+    self.songs.each 
 end 
