@@ -20,11 +20,10 @@ class Artist
     @@all<< self 
   end 
   
-  # def self.songs
-  #   Song.all.select do |s|
-  #     s.artist == self 
-  #   end 
-  # end 
+  def songs 
+    @songs 
+  end 
+  
   def self.find_or_create_by_name(name)
     self.all.detect {|artist| artist.name == name} || Artist.new(name)
   end 
