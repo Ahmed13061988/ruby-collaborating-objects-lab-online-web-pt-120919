@@ -19,12 +19,5 @@ class Artist
     end 
   end 
   def self.find_or_create_by_name(name)
-   if self.all.detect do |n| 
-     n.name == name 
-     name 
-   else 
-     Artist.new 
-   end 
- end 
- end 
+    
 end 
