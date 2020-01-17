@@ -18,4 +18,6 @@ class Artist
       s.artist == self 
     end 
   end 
+  def find_or_creat_by_name(name)
+    if 
 end 
