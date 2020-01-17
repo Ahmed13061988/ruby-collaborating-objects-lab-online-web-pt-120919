@@ -24,4 +24,5 @@ class Artist
     else 
       add_song(song)
     end 
+  end 
 end 
