@@ -31,4 +31,5 @@ class Artist
     artist.add_song(song)
   end
  end 
+ end 
 end 
