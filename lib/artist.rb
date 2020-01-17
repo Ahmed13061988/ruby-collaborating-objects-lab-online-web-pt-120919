@@ -18,7 +18,7 @@ class Artist
   song.artist == self
   end
   
-  def self.songs 
+  def songs 
     @songs 
   end 
 
@@ -27,7 +27,7 @@ class Artist
   end 
   
   def print_songs
-    self.songs.each  {|song| puts song.name}
+    self.songs.each {|song| puts song.name}
   end 
   
   def self.new_by_filename(filename)
