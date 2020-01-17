@@ -18,7 +18,7 @@ class Artist
       s.artist == self 
     end 
   end 
-  def find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     if artist.name.split(" ") == name 
       name 
     else 
