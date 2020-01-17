@@ -9,11 +9,11 @@ class Artist
     @@all
   end 
   def add_song(song)
-    song = Song
-    song.name = self 
+    @songs << song
+    song.artist == self 
   end
   def songs 
-    @songs.all.each do |s|
+    Song.all.each do |s|
       s.artist == self 
     end 
   end 
